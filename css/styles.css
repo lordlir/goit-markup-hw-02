@@ -1,0 +1,136 @@
+body{
+
+}
+
+:root{
+    --brand-color: #2196F3;
+}
+/*стили шапки(header)*/
+.header{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.logo{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: #000000;
+}
+
+.web-logo{
+    color: var(--brand-color);
+}
+
+.header-items{
+    list-style-type: none;
+}
+
+.header-item{
+    text-decoration: none;
+    color: #212121;
+}
+
+.header-items .header-item:hover,
+.header-items .header-item:focus{
+    color: var(--brand-color);
+}
+
+.contact-links{
+    list-style-type: none;
+}
+.contact-link{
+    text-decoration: none;
+    color: #212121;
+}
+
+.contact-links .contact-link:hover,
+.contact-links .contact-link:focus{
+    color: var(--brand-color);
+}
+/*стили подвала(footer)*/
+.footer{
+    height: 252px;
+    background-color: #2F303A;
+}
+
+.logo-footer{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 60px;
+    margin-left: 215px;
+    display: inline-block;
+}
+.footer-contacts{
+    list-style-type: none;
+    padding: 0;
+    margin-left: 215px;
+    display: inline-block;
+}
+.footer-map{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
+    
+}
+.footer-map:hover,
+.footer-map:focus{
+    color: var(--brand-color);
+}
+.footer-contact{
+    display: inline-block;
+    padding-top: 9px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact:hover,
+.footer-contact:focus{
+    color: var(--brand-color);
+}
+/*стили студии(1я страница)*/
+.banner{
+    background-color: #2F303A;
+    height: 600px;
+}
+.banner-title{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 136%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.banner-button{
+    width: 216px;
+    height: 50px;
+    background: var(--brand-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*стили портфолио(2я страница)*/
