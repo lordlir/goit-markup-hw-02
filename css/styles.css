@@ -55,8 +55,8 @@ body {
 }
 /*стилі підвала(footer)*/
 .footer {
-  height: 252px;
   background-color: #2f303a;
+  flex: 0 0 auto;
 }
 
 .logo-footer {
@@ -68,15 +68,9 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #ffffff;
-  margin-top: 60px;
-  margin-left: 215px;
-  display: inline-block;
 }
 .footer-contacts {
   list-style-type: none;
-  padding: 0;
-  margin-left: 215px;
-  display: inline-block;
 }
 .footer-map {
   font-family: "Roboto";
@@ -93,8 +87,6 @@ body {
   color: var(--brand-color);
 }
 .footer-contact {
-  display: inline-block;
-  padding-top: 9px;
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
@@ -182,7 +174,6 @@ body {
 /*4а секція - наша команда*/
 .team-section {
   background-color: #f5f4fa;
-  height: 648px;
 }
 .team {
   list-style-type: none;
