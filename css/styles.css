@@ -1,136 +1,260 @@
-body{
-
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
 }
 
-:root{
-    --brand-color: #2196F3;
+:root {
+  --brand-color: #2196f3;
 }
-/*стили шапки(header)*/
-.header{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
+/*стилі шапки(header)*/
+
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #000000;
 }
 
-.logo{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: #000000;
+.web-logo {
+  color: var(--brand-color);
+}
+/*незнаю чи так правильно ? прибрав маркери зі списків. загуглив*/
+.header-items {
+  list-style-type: none;
 }
 
-.web-logo{
-    color: var(--brand-color);
-}
-
-.header-items{
-    list-style-type: none;
-}
-
-.header-item{
-    text-decoration: none;
-    color: #212121;
+.header-item {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
 
 .header-items .header-item:hover,
-.header-items .header-item:focus{
-    color: var(--brand-color);
+.header-items .header-item:focus {
+  color: var(--brand-color);
 }
 
-.contact-links{
-    list-style-type: none;
+.contact-links {
+  list-style-type: none;
 }
-.contact-link{
-    text-decoration: none;
-    color: #212121;
+.contact-link {
+  text-decoration: none;
+  color: #212121;
 }
 
 .contact-links .contact-link:hover,
-.contact-links .contact-link:focus{
-    color: var(--brand-color);
+.contact-links .contact-link:focus {
+  color: var(--brand-color);
 }
-/*стили подвала(footer)*/
-.footer{
-    height: 252px;
-    background-color: #2F303A;
+/*стилі підвала(footer)*/
+.footer {
+  height: 252px;
+  background-color: #2f303a;
 }
 
-.logo-footer{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: #ffffff;
-    margin-top: 60px;
-    margin-left: 215px;
-    display: inline-block;
+.logo-footer {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #ffffff;
+  margin-top: 60px;
+  margin-left: 215px;
+  display: inline-block;
 }
-.footer-contacts{
-    list-style-type: none;
-    padding: 0;
-    margin-left: 215px;
-    display: inline-block;
+.footer-contacts {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 215px;
+  display: inline-block;
 }
-.footer-map{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    text-decoration: none;
-    
+.footer-map {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
 }
 .footer-map:hover,
-.footer-map:focus{
-    color: var(--brand-color);
+.footer-map:focus {
+  color: var(--brand-color);
 }
-.footer-contact{
-    display: inline-block;
-    padding-top: 9px;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+.footer-contact {
+  display: inline-block;
+  padding-top: 9px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-contact:hover,
-.footer-contact:focus{
-    color: var(--brand-color);
+.footer-contact:focus {
+  color: var(--brand-color);
 }
-/*стили студии(1я страница)*/
-.banner{
-    background-color: #2F303A;
-    height: 600px;
+/*стилі студії(1я страниця)
+1-я секція*/
+
+.banner-section {
+  background-color: #2f303a;
+  height: 600px;
 }
-.banner-title{
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 136%;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+.banner-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
-.banner-button{
-    width: 216px;
-    height: 50px;
-    background: var(--brand-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
+.banner-button {
+  width: 216px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 188%;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
-/*стили портфолио(2я страница)*/
+.banner-button:hover,
+.banner-button:focus {
+  background-color: var(--brand-color);
+  color: #ffffff;
+}
+
+/*2я секція - переваги*/
+/*стилі заголовків сецій 2-4*/
+.benefits-title,
+.employments-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.benefits {
+  list-style-type: none;
+}
+.benefit {
+  width: 270px;
+}
+.advantage-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantage {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/*3я секція - чим ми займаємося*/
+.employments {
+  list-style-type: none;
+}
+/*4а секція - наша команда*/
+.team-section {
+  background-color: #f5f4fa;
+  height: 648px;
+}
+.team {
+  list-style-type: none;
+}
+.employee {
+  width: 270px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.employee-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height -  так вказано на макеті і немає відсотків*/
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.employee-line {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/*стилі портфоліо(2я страниця)*/
+/* перша секція - філтер*/
+.filter-items {
+  list-style-type: none;
+}
+.filter-button {
+  width: 112px;
+  height: 38px;
+  left: 726px;
+  top: 174px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--brand-color);
+  color: #ffffff;
+}
+/*2а секція - розділи*/
+.chapters-item {
+  width: 370px;
+  height: 404px;
+  left: 615px;
+  top: 262px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+.chapters-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+  margin-left: 24px;
+  margin-bottom: 0%;
+}
+.chapters-item-line {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 188%;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-left: 24px;
+  margin-top: 4px;
+}
