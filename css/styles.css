@@ -153,7 +153,8 @@ body {
   width: 270px;
 }
 .advantage-title {
-  line-height: calc(16 / 14);
+  font-size: 14px;
+  line-height: 16px;
   text-transform: uppercase;
 }
 .advantage {
