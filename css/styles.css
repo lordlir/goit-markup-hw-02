@@ -1,10 +1,16 @@
 body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
+  font-size: 14px;
+  color: var(--main-text-color);
+  letter-spacing: 0.03em;
+  background-color: var(--background-main);
 }
 
 :root {
   --brand-color: #2196f3;
+  --main-text-color: #212121;
+  --other-text-color: #757575;
+  --background-main: #ffffff;
 }
 /*стилі шапки(header)*/
 
@@ -13,8 +19,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  line-height: calc(31 / 26);
   text-decoration: none;
   color: #000000;
 }
@@ -23,30 +28,33 @@ body {
   color: var(--brand-color);
 }
 /*незнаю чи так правильно ? прибрав маркери зі списків. загуглив*/
-.header-items {
+.nav-links {
   list-style-type: none;
 }
 
-.header-item {
+.nav-link {
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 
-.header-items .header-item:hover,
-.header-items .header-item:focus {
+.nav-links .nav-link:hover,
+.nav-links .nav-link:focus {
   color: var(--brand-color);
 }
-
+.nav-link.active {
+  color: var(--brand-color);
+}
 .contact-links {
   list-style-type: none;
 }
 .contact-link {
   text-decoration: none;
-  color: #212121;
+  color: var(--other-text-color);
+  font-weight: 500;
+  line-height: calc(16 / 14);
 }
 
 .contact-links .contact-link:hover,
@@ -64,10 +72,9 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  line-height: calc(31 / 26);
   text-decoration: none;
-  color: #ffffff;
+  color: var(--background-main);
 }
 .footer-contacts {
   list-style-type: none;
@@ -76,10 +83,8 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 171%;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  line-height: calc(24 / 14);
+  color: var(--background-main);
   text-decoration: none;
 }
 .footer-map:hover,
@@ -90,9 +95,7 @@ body {
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 171%;
-  letter-spacing: 0.03em;
+  line-height: calc(24 / 14);
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-contact:hover,
@@ -104,17 +107,15 @@ body {
 
 .banner-section {
   background-color: #2f303a;
-  height: 600px;
 }
 .banner-title {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 136%;
+  line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--background-main);
 }
 .banner-button {
   width: 216px;
@@ -124,28 +125,26 @@ body {
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
-  line-height: 188%;
+  line-height: calc(30 / 16);
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  background-color: var(--brand-color);
+  color: var(--background-main);
 }
 
 .banner-button:hover,
 .banner-button:focus {
-  background-color: var(--brand-color);
-  color: #ffffff;
+  background-color: var(--background-main);
+  color: var(--main-text-color);
 }
 
 /*2я секція - переваги*/
 /*стилі заголовків сецій 2-4*/
-.benefits-title,
-.employments-title,
-.team-title {
-  font-weight: 700;
+.section-title {
   font-size: 36px;
-  line-height: 42px;
+  line-height: calc(42 / 36);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .benefits {
   list-style-type: none;
@@ -154,18 +153,12 @@ body {
   width: 270px;
 }
 .advantage-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: calc(16 / 14);
   text-transform: uppercase;
 }
 .advantage {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 171%;
-  letter-spacing: 0.03em;
-  color: #757575;
+  line-height: calc(24 / 14);
+  color: var(--other-text-color);
 }
 /*3я секція - чим ми займаємося*/
 .employments {
@@ -180,7 +173,7 @@ body {
 }
 .employee {
   width: 270px;
-  background: #ffffff;
+  background: var(--background-main);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -188,19 +181,15 @@ body {
 .employee-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  /* identical to box height -  так вказано на макеті і немає відсотків*/
+  line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
 }
-.employee-line {
-  font-weight: 400;
+.employee-position {
   font-size: 16px;
-  line-height: 19px;
+  line-height: calc(19 / 16);
   /* identical to box height */
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--other-text-color);
 }
 /*стилі портфоліо(2я страниця)*/
 /* перша секція - філтер*/
@@ -208,20 +197,16 @@ body {
   list-style-type: none;
 }
 .filter-button {
-  width: 112px;
-  height: 38px;
-  left: 726px;
-  top: 174px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 162%;
+  line-height: calc(26 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
+  cursor: pointer;
 }
 .filter-button:hover,
 .filter-button:focus {
   background-color: var(--brand-color);
-  color: #ffffff;
+  color: var(--background-main);
 }
 /*2а секція - розділи*/
 .chapters-item {
@@ -229,23 +214,21 @@ body {
   height: 404px;
   left: 615px;
   top: 262px;
-  background: #ffffff;
+  background: var(--background-main);
   border: 1px solid #eeeeee;
+  list-style-type: none;
 }
 .chapters-item-title {
-  font-weight: 700;
   font-size: 18px;
-  line-height: 200%;
+  line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   margin-left: 24px;
   margin-bottom: 0%;
 }
 .chapters-item-line {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 188%;
-  letter-spacing: 0.03em;
-  color: #757575;
+  line-height: calc(30 / 16);
+  color: var(--other-text-color);
   margin-left: 24px;
   margin-top: 4px;
 }
