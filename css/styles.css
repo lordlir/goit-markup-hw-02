@@ -12,6 +12,10 @@ body {
   --other-text-color: #757575;
   --background-main: #ffffff;
 }
+.link {
+  list-style: none;
+  text-decoration: none;
+}
 /*стилі шапки(header)*/
 
 .logo {
@@ -20,20 +24,14 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  text-decoration: none;
   color: #000000;
 }
 
 .web-logo {
   color: var(--brand-color);
 }
-/*незнаю чи так правильно ? прибрав маркери зі списків. загуглив*/
-.nav-links {
-  list-style-type: none;
-}
 
 .nav-link {
-  text-decoration: none;
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -47,11 +45,8 @@ body {
 .nav-link.active {
   color: var(--brand-color);
 }
-.contact-links {
-  list-style-type: none;
-}
+
 .contact-link {
-  text-decoration: none;
   color: var(--other-text-color);
   font-weight: 500;
   line-height: calc(16 / 14);
@@ -73,28 +68,18 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  text-decoration: none;
   color: var(--background-main);
 }
-.footer-contacts {
-  list-style-type: none;
-}
+
 .footer-map {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   line-height: calc(24 / 14);
   color: var(--background-main);
-  text-decoration: none;
 }
-.footer-map:hover,
-.footer-map:focus {
-  color: var(--brand-color);
-}
+
 .footer-contact {
-  text-decoration: none;
   font-style: normal;
-  font-weight: 400;
   line-height: calc(24 / 14);
   color: rgba(255, 255, 255, 0.6);
 }
@@ -146,15 +131,13 @@ body {
   line-height: calc(42 / 36);
   text-align: center;
 }
-.benefits {
-  list-style-type: none;
-}
+
 .benefit {
   width: 270px;
 }
 .advantage-title {
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   text-transform: uppercase;
 }
 .advantage {
@@ -162,16 +145,12 @@ body {
   color: var(--other-text-color);
 }
 /*3я секція - чим ми займаємося*/
-.employments {
-  list-style-type: none;
-}
+
 /*4а секція - наша команда*/
 .team-section {
   background-color: #f5f4fa;
 }
-.team {
-  list-style-type: none;
-}
+
 .employee {
   width: 270px;
   background: var(--background-main);
@@ -193,16 +172,16 @@ body {
   color: var(--other-text-color);
 }
 /*стилі портфоліо(2я страниця)*/
-/* перша секція - філтер*/
-.filter-items {
-  list-style-type: none;
-}
+/*  - філтер*/
+
 .filter-button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   text-align: center;
   cursor: pointer;
+  letter-spacing: inherit;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -210,26 +189,21 @@ body {
   color: var(--background-main);
 }
 /*2а секція - розділи*/
-.chapters-item {
+.project-item {
   width: 370px;
   height: 404px;
   left: 615px;
   top: 262px;
   background: var(--background-main);
   border: 1px solid #eeeeee;
-  list-style-type: none;
 }
-.chapters-item-title {
+.project-title {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  margin-left: 24px;
-  margin-bottom: 0%;
 }
-.chapters-item-line {
+.project-name {
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--other-text-color);
-  margin-left: 24px;
-  margin-top: 4px;
 }
